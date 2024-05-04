@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New User</title>
+    <style>
+        * {
+            background-color: #91e0d3f7;
+            margin: 0px;
+        }
+
+        body {
+            background-color: #97E7E1;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgba(23, 39, 223, 0.916);
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        input {
+            width: 200px;
+        }
+
+        button {
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="margin-top: 20px;">Create New User</h1>
+    <a href="http://127.0.0.1:5000/"><button
+            style="background-color: rgb(104, 165, 222);margin-left: 20px;padding: 20px;border-radius: 25px;">Main
+            Page</button></a>
+            <h5 style="text-align: center;font-size: 26px;">If u created the Username then go to main page,There continue the procedure from creating dataset...</h5>
+    <form action="/new_user" method="post">
+        <label for="username">Enter Your Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <button type="submit">Create User and File</button>
+    </form>
+
+</body>
+
+</html>
